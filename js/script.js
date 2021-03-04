@@ -11,9 +11,10 @@ function handleData(event) {
     event.preventDefault();
 
     userInput = $input.val();
+    console.log(userInput);
 
     $.ajax({
-        url:'https://pokeapi.co/api/v2/pokemon/' + userInput
+        url:`https://pokeapi.co/api/v2/pokemon/${userInput.toLowerCase()}`
     }).then(
         (data) => {
             pokeData = data;
