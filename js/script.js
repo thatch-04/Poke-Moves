@@ -43,7 +43,7 @@ function render() {
                 moveData = data;
                 console.log(moveData.effect_entries);
                 let $p = $('<p>').text(`${moveData.effect_entries[0].effect}`);
-                let $name = $('<p>').text(`${pokeData.moves[i].move.name}`)
+                let $name = $('<h4>').text(`${pokeData.moves[i].move.name}:`)
                 $('body').append($name);
                 $('body').append($p);
             },
