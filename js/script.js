@@ -1,3 +1,4 @@
+//initializing global variables to catch data and store DOM elements
 let pokeData, userInput, moveData;
 
 const $targetPokemon = $('#pokemon');
@@ -5,8 +6,10 @@ const $idNumber = $('#id-number');
 const $moves = $('moves');
 const $input = $('input[type="text"]');
 
+//event listener for the submit button
 $('form').on('submit', handleData);
 
+//event function for making API call
 function handleData(event) {
     event.preventDefault();
 
@@ -25,28 +28,13 @@ function handleData(event) {
         }
     );
 }
-
+//render function to manipulate DOM elements with the data from the API call
 function render() {
     $targetPokemon.text(userInput);
     $idNumber.text(pokeData.id);
     console.log(pokeData.moves[0].move.url);
-    /*pokeData.moves.forEach(move => {
-        console.log(move.url);
-        $.ajax({
-            url: `${move.url}`
-        }).then(
-            (data2) => {
-                moveData = data2;
-                console.log(moveData.effect_entries);
-                let $p = $('<p>').innertext(`${moveData.effect_entries[0].effect}`);
-                $('body').append($p);
-            },
-            (error) => {
-                console.log('bad request', error)
-            }
-        );
-    });*/
 
+    //loop to grab all pokemon's moves with API calls to end respective move
         for (let i=0; i < pokeData.moves.length; i++) {
         $.ajax({
             url: pokeData.moves[i].move.url
