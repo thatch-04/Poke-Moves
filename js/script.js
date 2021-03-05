@@ -46,6 +46,7 @@ function render() {
                 let $name = $('<h4>').text(`${pokeData.moves[i].move.name}:`)
                 $('body').append($name);
                 $('body').append($p);
+                $('body').append($('<HR>'))
             },
             (error) => {
                 console.log('bad request', error)
