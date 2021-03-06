@@ -33,6 +33,10 @@ p {
     margin: 20px;
 }
 
+.move {
+    color: red;
+}
+
 #pokemon {
     font-size: 25px;
 }

@@ -17,3 +17,7 @@ A web application that allows you to enter a pokemon and get back all the moves 
 **Pokemon battle simulator** - simulate pokemon moves in a mock battle. Select your pokemon and test your moves in a battle against a randomly generated opponent.
 
 **Pokemon Gallery** - Gallery of pokemon images.
+
+### View the Site:
+<br>
+You can check out the site at: https://thatch-04.github.io/
