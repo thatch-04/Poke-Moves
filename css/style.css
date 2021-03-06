@@ -14,6 +14,7 @@ body {
 
 form {
     margin: 20px;
+    width: 75%;
 }
 
 main {
@@ -46,8 +47,8 @@ p {
 }
 
 .pokedex {
-    height: 150px;
-    
+    height: 120px;
+    width: 75%;
 }
 
 .container {
@@ -62,6 +63,11 @@ p {
 
     .pokedex {
         height: 200px;
+        width: auto;
+    }
+
+    form {
+        width: 100%;
     }
 }
 
@@ -72,5 +78,10 @@ p {
 
     .pokedex {
         height: 250px;
+        width: auto;
+    }
+
+    form {
+        width: 100%;
     }
 }
