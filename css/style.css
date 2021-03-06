@@ -33,6 +33,24 @@ p {
     margin: 20px;
 }
 
+#pokemon {
+    font-size: 25px;
+}
+
+#id-number {
+    font-size: 20px;
+}
+
+.pokedex {
+    height: 200px;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media screen and (min-width: 480px){
     h1 {
         font-size: 40px;
